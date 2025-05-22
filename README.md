@@ -23,7 +23,7 @@ A Java Swing application for managing student records with MySQL database integr
    - Open `src/util/DatabaseConnection.java`
    - Update the following constants with your MySQL credentials:
      ```java
-     private static final String URL = "jdbc:mysql://localhost:3306/student_management";
+     private static final String URL = "jdbc:mysql://localhost:3306/DATABASE_NAME";
      private static final String USER = "your_username";
      private static final String PASSWORD = "your_password";
      ```
