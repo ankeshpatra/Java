@@ -19,14 +19,7 @@ A Java Swing application for managing student records with MySQL database integr
 
 ## Setup Instructions
 
-1. **Database Setup**
-   - Install MySQL Server if not already installed
-   - Run the SQL script in `database/setup.sql` to create the database and tables:
-     ```bash
-     mysql -u root -p < database/setup.sql
-     ```
-
-2. **Configure Database Connection**
+1. **Configure Database Connection**
    - Open `src/util/DatabaseConnection.java`
    - Update the following constants with your MySQL credentials:
      ```java
@@ -35,15 +28,9 @@ A Java Swing application for managing student records with MySQL database integr
      private static final String PASSWORD = "your_password";
      ```
 
-3. **Compile and Run**
-   - Compile the Java files:
-     ```bash
-     javac -d bin src/**/*.java
-     ```
-   - Run the application:
-     ```bash
-     java -cp bin:mysql-connector-java.jar App
-     ```
+2. **Compile and Run**
+
+   By using any code runner extension or by clicking the play button on the top right corner to run the java debugger.
 
 ## Usage
 
@@ -68,13 +55,8 @@ A Java Swing application for managing student records with MySQL database integr
    - Confirm the deletion
 
 5. **Searching and Filtering**
-   - Use the search field to find students by name
-   - Use the combo boxes to filter by class or status
+   - Use the search field to find students by name or roll number.
+   - Use the filter field to filter the students on the basis of class,section or enrollment status.
 
-## Contributing
-
-Feel free to fork this project and submit pull requests for any improvements.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Contributions
+Feel free to pull request, happy to add more changes and enhancement to the code.
